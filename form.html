@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Recipie Suggestion</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="form.js"></script>
+  </heaead<body>
+  <h1>Rujuta's Recipes</h1> 
+  <nav class="navbar navbar-expand-sm bg-info navbar-dark">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Recipies</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="recipeSearch.html">Search For A Recipie</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="form.html">Submit a Recipe</a>
+      </li>
+    </ul>
+  </nav>
+  <h2 id="suggestionText">Recipie Suggestion</h2>
+  <form onsubmit = "displayMessage()">
+    <label for="rname">Recipe name:</label>
+    <input type="text" id="rname" name="rname"></br>
+    <label for="prep">Prep Time:</label>
+    <input type="text" id="prep" name="prep"></br>
+    <label for="cook">Cook Time:</label>
+    <input type="text" id="cook" name="cook"></br>
+    <label for="total">Total Time:</label>
+    <input type="text" id="total" name="total"></br>
+
+    <label for="diff">Difficulty 1-10 (1=Easy, 10=Hard):</label>
+    <input type="number" id="diff" name="diff" min="1" max="10"><br>
+    <label for="rtype">Recipie Type (select all that apply):</label></br>
+    <input type="checkbox" id="main-meal" name="main-meal" value="main-meal">
+    <label for="main meal"> Main Meal</label><br>
+    <input type="checkbox" id="breakfast" name="breakfast" value="breakfast">
+    <label for="breakfast"> Breakfast</label><br>
+    <input type="checkbox" id="snack" name="snack" value="snack">
+    <label for="snack"> Snack</label><br>
+    <input type="checkbox" id="dessert+drinks" name="dessert+drinks" value="dessert+drinks">
+    <label for="dessert+drinks"> Desserts + Drinks</label><br>
+    <label for="S1">Step 1:</label>
+    <input type="text" id="S1" name="S1"></br>
+    <label for="S2">Step 2:</label>
+    <input type="text" id="S2" name="S2"></br>
+    <label for="S3">Step 3:</label>
+    <input type="text" id="S3" name="S3"></br>
+    <label for="S4">Step 4:</label>
+    <input type="text" id="S4" name="S4"></br>
+    <label for="S5">Step 5:</label>
+    <input type="text" id="S5" name="S5"></br>
+    <label for="S6">Step 6:</label>
+    <input type="text" id="S6" name="S6"></br>
+    <label for="S7">Step 7:</label>
+    <input type="text" id="S7" name="S7"></br>
+    <label for="S8">Step 8:</label>
+    <input type="text" id="S8" name="S8"></br>
+    <label for="S9">Step 9:</label>
+    <input type="text" id="S9" name="S9"></br>
+    <label for="S10">Step 10:</label>
+    <input type="text" id="S10" name="S10"></br>
+<p id = "message"></p>
+    <input type="submit" value="Submit Recipie">
+    <input type="reset">
+  </form>
+  </body>
+  <html>
